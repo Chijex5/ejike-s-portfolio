@@ -101,6 +101,7 @@
         position: absolute;
         top: 90px;
         right: 20px;
+        width: 100%;
         background: #081b29;
         padding: 10px;
         border-radius: 8px;

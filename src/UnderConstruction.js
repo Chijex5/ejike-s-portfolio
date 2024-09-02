@@ -7,8 +7,12 @@ function UnderConstruction() {
   const [timeLeft, setTimeLeft] = useState({});
 
   useEffect(() => {
-    const targetTime = new Date();
-    targetTime.setHours(targetTime.getHours() + 55);
+    // Set the target time to today at 15:00
+    const startTime = new Date();
+    startTime.setHours(15, 0, 0, 0); // Set time to 15:00:00 today
+
+    // Add 50 hours to the start time
+    const targetTime = new Date(startTime.getTime() + 50 * 60 * 60 * 1000);
 
     const intervalId = setInterval(() => {
       const now = new Date();
@@ -40,7 +44,6 @@ function UnderConstruction() {
               {`${timeLeft.hours}h ${timeLeft.minutes}m ${timeLeft.seconds}s`}
             </div>
           )}
-           
         </div>
         <img src={constructionImage} alt="Page Under Construction" />
         <a href="/" className="back-home-button">Back Home</a>
