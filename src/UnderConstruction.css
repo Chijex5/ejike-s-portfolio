@@ -1,0 +1,129 @@
+/* Main container styling */
+.under-construction-container {
+    background: #081b29; /* Theme color */
+    color: #ededed;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: center;
+    padding: 0 5%;
+  }
+  
+  /* Content section */
+  .content {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    text-align: left;
+    align-items: center;
+  }
+  
+  /* Heading styling */
+  .content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #00abf0;
+    animation: fadeInDown 0.8s ease-in-out;
+  }
+  
+  /* Description styling */
+  .content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    animation: fadeInUp 0.8s ease-in-out;
+  }
+  
+  /* Image styling */
+  .content img {
+    max-width: auto;
+    height: 50vh;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+
+  .back-home-button {
+    font-size: 1.2rem;
+    color: #081b29;
+    background-color: #00abf0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    animation: fadeInUp 0.8s ease-in-out;
+  }
+  
+  
+  /* Timer styling */
+  .timer {
+    font-size: 1.5rem;
+    color: #ededed;
+    background-color: #00abf0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    animation: fadeInUp 0.8s ease-in-out;
+    margin-bottom: 20px;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .content h1 {
+      font-size: 1.8rem;
+    }
+  
+    .content p {
+      font-size: 0.9rem;
+    }
+  
+    .timer {
+      font-size: 1.2rem;
+      padding: 8px 15px;
+    }
+
+    .content img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        animation: fadeIn 0.8s ease-in-out;
+      }
+  }
+  
