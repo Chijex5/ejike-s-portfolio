@@ -2,10 +2,12 @@
 .home-mobile {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    
     text-align: center;
     background-color: #081b29; /* Background color matching the main theme */
     color: #ededed; /* Text color for readability */
+    max-width: 100vw;
+
   }
 
   * {
@@ -15,9 +17,10 @@
     font-family: 'Poppins', sans-serif;
 }
   
-  .home-mobile .home-content {
+  .home-mobile .textbox {
     margin-top: 20px;
-    padding: 10px;
+    padding: 20px;
+    
   }
   
   /* Styles for headings */
@@ -58,6 +61,7 @@
   
   /* Button box styling */
   .home-mobile .btn-box {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -94,11 +98,14 @@
   }
   
   /* Social media icons */
-  .home-sci {
+  .home-mobile .home-sci {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 3em;
+    width: 100%;
     margin-top: 20px;
+    align-items: center;
+    
   }
   
   .home-sci a {

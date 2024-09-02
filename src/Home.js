@@ -35,9 +35,10 @@ function Home() {
           </div>
         </div>
         <div className="home-sci">
-          <a href="#"><i className="bx bxl-twitter"></i></a>
-          <a href="#"><i className="bx bxl-linkedin"></i></a>
-          <a href="#"><i className="bx bxl-github"></i></a>
+            <a href="https://x.com/mrejikee"><i className="bx bxl-twitter"></i></a>
+            <a href="#"><i className="bx bxl-linkedin"></i></a>
+            <a href="https://github.com/hello-ejike/"><i className="bx bxl-github"></i></a>
+            <a href="mailto:embroconnect@gmail.com"><i className='bx bx-envelope'></i></a>
         </div>
         <span className="home-imgHover"></span>
       </section>

@@ -32,6 +32,10 @@
     animation-delay: .4s;
 }
 
+.nav-link.active{
+    color: #00abf0;
+}
+
 
 .navbar a {
     font-size: 18px;
@@ -86,9 +90,7 @@
         width: 100%;
         
     }
-    .nav-link.active{
-        color: #00abf0;
-    }
+    
 
     /* Toggle the visibility of navbar links when the hamburger is clicked */
     .navbar.active {
@@ -97,11 +99,12 @@
         flex-direction: column;
         gap: 20px;
         position: absolute;
-        top: 100px;
+        top: 90px;
         right: 20px;
         background: #081b29;
         padding: 10px;
         border-radius: 8px;
+
     }
 
     .header::before {

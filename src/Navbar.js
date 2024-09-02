@@ -19,21 +19,21 @@ function Navbar() {
   };
 
   const handleClickOutside = (event) => {
-    // Check if click is outside the menu
     if (menuRef.current && !menuRef.current.contains(event.target)) {
-      setMenuOpen(false); // Close the menu
+      setMenuOpen(false);
     }
   };
 
   useEffect(() => {
-    // Add event listener for clicks
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('mousedown', 
+    handleClickOutside);
 
-    // Clean up the event listener when the component is unmounted or re-renders
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
+
+  
 
   // Function to check if the link is active
   const isActive = (path) => location.pathname === path;
@@ -41,7 +41,10 @@ function Navbar() {
   return (
     <header className="header">
       <Link to="/" className="logo">Chinedu</Link> {/* Using Link for navigation */}
-      <i className="bx bx-menu menu-toggle" onClick={toggleMenu}></i>
+      <i 
+        className={`bx ${menuOpen ? "bx-x" : "bx-menu"} menu-toggle`} 
+        onClick={toggleMenu}
+      ></i>
       <nav ref={menuRef} className={`navbar ${menuOpen ? 'active' : ''}`}>
         <Link
           to="/"

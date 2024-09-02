@@ -26,19 +26,22 @@ function HomeMobile() {
         <Navbar />
         <section className="home-mobile">
         <div className="home-content">
-            <h1 className="animated-heading">Hi, I'm Chinedu Uzodinma</h1>
-            <h3 className="animated-heading">Data Engineer</h3>
-            <p className="animated-para">
-            I build and optimize data pipelines to transform raw data into valuable insights, driving informed decisions and business success.
-            </p>
+            <div className='textbox'>
+                <h1 className="animated-heading">Hi, I'm Chinedu Uzodinma</h1>
+                <h3 className="animated-heading">Data Engineer</h3>
+                <p className="animated-para">
+                I build and optimize data pipelines to transform raw data into valuable insights, driving informed decisions and business success.
+                </p>
+            </div>
             <div className="btn-box">
-            <a href="#">Collaborate</a>
-            <a href="#">Connect</a>
+                <a href="#">Collaborate</a>
+                <a href="#">Connect</a>
             </div>
             <div className="home-sci">
-            <a href="#"><i className="bx bxl-twitter"></i></a>
-            <a href="#"><i className="bx bxl-linkedin"></i></a>
-            <a href="#"><i className="bx bxl-github"></i></a>
+                <a href="https://x.com/mrejikee"><i className="bx bxl-twitter"></i></a>
+                <a href="#"><i className="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/hello-ejike/"><i className="bx bxl-github"></i></a>
+                <a href="mailto:embroconnect@gmail.com"><i className='bx bx-envelope'></i></a>
             </div>
         </div>
         </section>

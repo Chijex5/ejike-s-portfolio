@@ -103,6 +103,14 @@ function About() {
                 <i className="bx bxl-mongodb"></i>
                 <span>MongoDB</span>
               </div>
+              <div className="skill-item">
+              <i class="fa-brands fa-hubspot"></i>
+                <span>HubSpot</span>
+              </div>
+              <div className="skill-item">
+                <i class='bx bxl-react'></i>
+                <span>React</span>
+              </div>
             </div>
           </div>
         </div>
