@@ -1,0 +1,202 @@
+/* Main container styling */
+.main-about {
+  background: #081b29;
+  color: #ededed;
+  padding: 80px 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-about .header {
+  background: #081b29;
+  position: fixed;
+  top: 0;
+  margin-bottom: 1px solid white;
+}
+
+/* About section */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  text-align: left;
+  margin-top: 2em;
+}
+
+/* Heading styling */
+.about-heading {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #00abf0;
+  animation: fadeInDown 0.8s ease-in-out;
+}
+
+/* Typing effect container */
+.typing-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.typing-text {
+  font-size: 1.4rem;
+  font-weight: bold;
+  overflow: hidden;
+ margin-right: 0.9em;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.typing-cursor {
+  font-weight: normal;
+  font-size: 1.4rem;
+  animation: blink 1s infinite;
+  margin-left: 0.15rem;
+}
+
+/* Text description */
+.about-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+/* Skills section */
+.skills-section {
+  margin-top: 30px;
+}
+
+/* Skills heading */
+.skills-heading {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  animation: fadeInLeft 0.8s ease-in-out;
+}
+
+/* Skills grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 15px;
+  justify-items: center;
+}
+
+/* Individual skill item */
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.skill-item i {
+  font-size: 28px;
+  color: #00abf0;
+  margin-bottom: 5px;
+}
+
+.skill-item span {
+  font-size: 0.85rem;
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkCursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-heading {
+    font-size: 1.8rem;
+  }
+
+  .typing-text {
+    font-size: 1.2rem;
+  }
+
+  .about-description {
+    font-size: 0.9rem;
+  }
+
+  .skills-heading {
+    font-size: 1.5rem;
+  }
+
+  .skills-grid {
+    gap: 10px;
+  }
+
+  .skill-item i {
+    font-size: 25px;
+  }
+}

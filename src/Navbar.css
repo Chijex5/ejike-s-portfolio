@@ -1,0 +1,119 @@
+/* src/Navbar.css */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+.logo {
+    position: relative;
+    font-size: 2em;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: #00abf0;
+}
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+
+.navbar a:hover
+.navbar.active {
+    color: #00abf0;
+}
+
+.header i {
+    display: none;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .navbar {
+        display: none; /* Hide navbar links on mobile */
+    }
+    .header i {
+        display: block;
+    }
+    .header {
+        position: relative;
+        background: #081b29;
+        z-index: 100;
+        border-bottom: 1px solid #ededed;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 28px;
+        color: #00abf0;
+        cursor: pointer;
+    }
+    .navbar{
+        width: 100%;
+        
+    }
+    .nav-link.active{
+        color: #00abf0;
+    }
+
+    /* Toggle the visibility of navbar links when the hamburger is clicked */
+    .navbar.active {
+        
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 100px;
+        right: 20px;
+        background: #081b29;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: #081b29;
+        animation: showRight 1s ease forwards;
+        animation-delay: .4s;
+    }
+}
+

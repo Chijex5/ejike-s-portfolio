@@ -1,0 +1,120 @@
+/* Mobile-specific styles for HomeMobile */
+.home-mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    background-color: #081b29; /* Background color matching the main theme */
+    color: #ededed; /* Text color for readability */
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+  
+  .home-mobile .home-content {
+    margin-top: 20px;
+    padding: 10px;
+  }
+  
+  /* Styles for headings */
+  .home-mobile .animated-heading {
+    font-size: 1.5rem; /* Suitable size for mobile screens */
+    font-weight: 700;
+    margin: 10px 0;
+    line-height: 1.4;
+    position: relative;
+    color: #ededed;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(20px);
+  }
+  
+  .home-mobile .in-view.animated-heading {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Styles for paragraph text */
+  .home-mobile .animated-para {
+    font-size: 1rem; /* Slightly smaller for body text */
+    margin: 10px 0 20px;
+    line-height: 1.5;
+    color: #cfcfcf; /* Slightly lighter color for contrast */
+    position: relative;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateY(20px);
+    margin-bottom: 30px;
+  }
+  
+  .home-mobile .in-view.animated-para {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Button box styling */
+  .home-mobile .btn-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .home-mobile .btn-box a {
+    padding: 10px;
+    background: #00abf0;
+    color: #081b29;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+
+.home-mobile .btn-box a:nth-child(2) {
+    background: transparent;
+    color: #00abf0;
+}
+
+.home-mobile .btn-box a:nth-child(2):hover {
+    color: #081b29;
+}
+
+
+.home-mobile .btn-box a:nth-child(2)::before {
+    background: #00abf0;
+}
+  
+  .home-mobile .btn-box a:hover {
+    background: #00a3e0;
+    color: #fff;
+  }
+  
+  /* Social media icons */
+  .home-sci {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .home-sci a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    color: #00abf0;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .home-sci a:hover {
+    background: #00abf0;
+    color: #081b29;
+  }
+  

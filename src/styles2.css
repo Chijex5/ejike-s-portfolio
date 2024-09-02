@@ -1,0 +1,42 @@
+.about {
+    padding: 100px 10%;
+    background: #081b29;
+    color: #ededed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.about-content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background: #081b29;
+    color: #ededed;
+    padding: 20px 10%;
+    text-align: center;
+}
+
+.footer-sci {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+
