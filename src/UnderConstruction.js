@@ -7,32 +7,30 @@ function UnderConstruction() {
   const [timeLeft, setTimeLeft] = useState({});
 
   useEffect(() => {
-    // Set the target time to today at 15:00
-    const startTime = new Date();
-    startTime.setHours(15, 0, 0, 0); // Set time to 15:00:00 today
+    const targetDate = new Date('2024-09-02T15:00:00'); // Start date and time
+    const duration = 50 * 60 * 60 * 1000; // 50 hours in milliseconds
+    const endDate = new Date(targetDate.getTime() + duration);
 
-    // Add 50 hours to the start time
-    const targetTime = new Date(startTime.getTime() + 50 * 60 * 60 * 1000);
-
-    const intervalId = setInterval(() => {
+    const updateTimer = () => {
       const now = new Date();
-      const difference = targetTime - now;
+      const difference = endDate - now;
 
-      if (difference <= 0) {
-        clearInterval(intervalId);
-        setTimeLeft({ hours: 0, minutes: 0, seconds: 0 });
-      } else {
-        const hours = Math.floor(difference / (1000 * 60 * 60));
+      if (difference > 0) {
+        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
         setTimeLeft({ hours, minutes, seconds });
+      } else {
+        setTimeLeft({ hours: 0, minutes: 0, seconds: 0 });
       }
-    }, 1000);
+    };
 
-    return () => clearInterval(intervalId);
+    const timerInterval = setInterval(updateTimer, 1000);
+
+    return () => clearInterval(timerInterval); // Cleanup interval on component unmount
   }, []);
-
+    
   return (
     <div className="under-construction-container">
       <div className="content">

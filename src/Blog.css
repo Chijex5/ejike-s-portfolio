@@ -1,0 +1,144 @@
+.blog-container {
+  background: #081b29;
+  color: #ededed;
+  padding: 80px 5%;
+  min-height: 100vh;
+}
+
+.blog-container .header{
+    position: fixed;
+    background: #081b29;
+}
+
+.blog-heading {
+  font-size: 2.3rem;
+  color: #00abf0;
+  text-align: center;
+  margin: 20px 0;
+  animation: fadeInDown 0.8s ease-in-out;
+}
+
+.location {
+    display: flex;
+    gap: 12px; /* Space between icons */
+    margin-top: 15px; /* Space above the icon row */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Wrap icons to next line if needed */
+  }
+  
+  /* Individual Tool Icon Style */
+.location i {
+    font-size: 22px; /* Adjust icon size for consistency */
+    color: #00abf0; /* Match the color scheme with other elements */
+    background-color: #081b29; /* Background color matching your theme */
+    padding: 8px; /* Padding around the icon for better spacing */
+    border-radius: 50%; /* Circular shape around icons */
+    border: 2px solid #00abf0; /* Border to match theme */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  .location span{
+    font-size: 1em;
+  }
+  
+  /* Hover Effect for Icons */
+.location i:hover {
+    transform: scale(1.15); /* Slightly enlarge on hover */
+    background-color: #ededed; /* Change background on hover */
+    color: #081b29; /* Invert color on hover for contrast */
+}
+
+.blog-description {
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 40px;
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.article-card {
+  background: #0a2a40;
+  border: 1px solid #00abf0;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.article-card:hover {
+  transform: scale(1.05);
+}
+
+.article-title {
+  font-size: 1.5rem;
+  color: #ededed;
+  margin-bottom: 10px;
+}
+
+.article-date {
+  font-size: 0.85rem;
+  color: #00abf0;
+  margin-bottom: 10px;
+}
+
+.article-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.articles-grid .btn-box {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background: #00abf0;
+  color: #081b29;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid #00abf0;
+  border-radius: 5px;
+  transition: 0.3s;
+  
+}
+
+.articles-grid .btn-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.articles-grid .btn-box:hover {
+  background: transparent;
+  color: #00abf0;
+}
+
+@media (max-width: 768px) {
+  .blog-heading {
+    font-size: 1.8rem;
+  }
+
+  .articles-grid .btn-box{
+    max-height: 3rem;
+    max-width: 85%;
+  }
+
+  .article-card {
+    padding: 15px;
+  }
+
+  .article-title {
+    font-size: 1.3rem;
+  }
+
+  .article-description {
+    font-size: 0.9rem;
+  }
+}

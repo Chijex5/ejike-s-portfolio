@@ -49,25 +49,19 @@ function Navbar() {
         </Link>
         <Link
           to="/projects"
-          className={`nav-link ${isActive('/project') ? 'active' : ''}`}
+          className={`nav-link ${isActive('/projects') ? 'active' : ''}`}
           onClick={handleLinkClick}
         >
           Project
         </Link>
         <Link
-          to="/contact"
-          className={`nav-link ${isActive('/contact') ? 'active' : ''}`}
+          to="/blog"
+          className={`nav-link ${isActive('/blog') ? 'active' : ''}`}
           onClick={handleLinkClick}
         >
-          Contact
+          Blog
         </Link>
-        <Link
-          to="/services"
-          className={`nav-link ${isActive('/services') ? 'active' : ''}`}
-          onClick={handleLinkClick}
-        >
-          Services
-        </Link>
+        
       </nav>
     </header>
   );

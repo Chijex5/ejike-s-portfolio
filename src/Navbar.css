@@ -90,6 +90,7 @@
     .header i {
         display: block;
     }
+    
     .header {
         position: relative;
         background: #081b29;
@@ -111,17 +112,18 @@
 
     /* Toggle the visibility of navbar links when the hamburger is clicked */
     .navbar.active {
-        
+        position: fixed;
         display: flex;
         flex-direction: column;
         gap: 20px;
         position: absolute;
         top: 90px;
-        right: 20px;
+        right: 0;
         width: 100%;
         background: #081b29;
         padding: 10px;
-        border-radius: 8px;
+       
+        border-bottom: 1px solid #ededed;
 
     }
 

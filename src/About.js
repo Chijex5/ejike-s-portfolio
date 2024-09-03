@@ -9,10 +9,10 @@ function About() {
   const [backspacing, setBackspacing] = useState(false);
 
   const textArray = [
-    'Turning Data into Insights.',
-    "Optimizing Data Pipelines.",
-    'Empowering Decisions with Data.',
-    "Building Robust Data Solutions.",
+    'Turning Operations into Growth.',
+    'Optimizing Revenue Processes.',
+    'Empowering Decisions with Revenue Insights.',
+    'Building Robust Revenue Solutions.'
   ];
 
   useEffect(() => {
@@ -54,11 +54,7 @@ function About() {
             </h1>
           </div>
           <p className="about-description">
-            I’m Chinedu Uzodinma, a passionate Data Engineer who specializes in
-            building and optimizing data pipelines, creating robust ETL processes,
-            and transforming raw data into valuable insights. My experience
-            encompasses working with various data technologies, ensuring seamless
-            data flow to empower businesses in making data-driven decisions.
+          I’m Chinedu Uzodinma, a dedicated RevOps Analyst who specializes in streamlining revenue operations, optimizing sales processes, and integrating systems to drive business growth. My expertise includes analyzing and improving operational efficiencies, ensuring alignment between sales, marketing, and customer success teams, and leveraging data to support strategic decision-making and enhance revenue performance.
           </p>
           <div className="skills-section">
             <h3 className="skills-heading">Skills & Expertise</h3>
