@@ -74,9 +74,7 @@
 .navbar.active {
     color: #00abf0;
 }
-.navbar a:hover{
-    z-index: 1;
-}
+
 
 .header i {
     display: none;
