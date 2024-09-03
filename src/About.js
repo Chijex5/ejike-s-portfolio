@@ -92,7 +92,7 @@ function About() {
                 <span>Linux</span>
               </div>
               <div className="skill-item">
-                <i class='bx bxl-heroku'></i>
+                <i className='bx bxl-heroku'></i>
                 <span>Heroku</span>
               </div>
               <div className="skill-item">
@@ -100,11 +100,11 @@ function About() {
                 <span>MongoDB</span>
               </div>
               <div className="skill-item">
-              <i class="fa-brands fa-hubspot"></i>
+              <i className="fa-brands fa-hubspot"></i>
                 <span>HubSpot</span>
               </div>
               <div className="skill-item">
-                <i class='bx bxl-react'></i>
+                <i className='bx bxl-react'></i>
                 <span>React</span>
               </div>
             </div>
