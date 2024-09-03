@@ -57,6 +57,11 @@ body {
     z-index: 3;
 }
 
+.main-home .navbar a:hover{
+    color: #00abf0;
+    
+}
+
 .home-content h3::before {
     content: '';
     position: absolute;

@@ -9,6 +9,10 @@
     position: fixed;
     background: #081b29;
 }
+.blog-container .navbar a:hover{
+    color: #00abf0;
+    
+}
 
 .blog-heading {
   font-size: 2.3rem;

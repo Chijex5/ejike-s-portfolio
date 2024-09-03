@@ -90,6 +90,10 @@
   gap: 20px;
   justify-items: center;
 }
+.main-about .navbar a:hover{
+  color: #00abf0;
+  
+}
 
 @media (min-width: 1024px) {
   .skills-grid {

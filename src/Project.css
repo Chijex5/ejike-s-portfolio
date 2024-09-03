@@ -82,6 +82,10 @@
     border: 2px solid #00abf0; /* Border to match theme */
     transition: transform 0.3s ease, background-color 0.3s ease;
   }
+  .main-project .navbar a:hover{
+    color: #00abf0;
+    
+}
   
   /* Hover Effect for Icons */
   .tools-icon i:hover {
