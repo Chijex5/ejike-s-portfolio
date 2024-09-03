@@ -48,7 +48,7 @@ const Blog = () => {
       <section className="blog-content">
         <h2 className="blog-heading">Blog</h2>
         <p className="blog-description">
-        Explore a curated selection of articles and insights that reflect my professional expertise, industry knowledge, and thought leadership. Engage with content that delves into diverse topics, offering valuable perspectives and in-depth analysis to foster understanding and inspire innovation.
+        Browse a collection of articles and insights that I have authored across various platforms, now conveniently brought together in one place. This curated selection reflects my professional journey, offering diverse perspectives, in-depth analysis, and valuable knowledge, all aimed at informing and inspiring a broader audience.
         </p>
         <div className="articles-grid">
           {articles.map((article, index) => (
