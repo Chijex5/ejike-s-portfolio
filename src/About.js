@@ -39,6 +39,7 @@ function About() {
     }, 100);
 
     return () => clearInterval(typingInterval);
+    // eslint-disable-next-line
   }, [textIndex, typingText, backspacing]);
 
   return (

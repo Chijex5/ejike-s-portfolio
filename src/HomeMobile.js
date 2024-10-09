@@ -21,26 +21,44 @@ function HomeMobile() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const animatedElements = document.querySelectorAll('.animated-heading, .animated-para, .btn-box a, .home-sci a');
+      animatedElements.forEach((el) => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top <= window.innerHeight - 100) {
+          el.classList.add('in-view');
+        } else {
+          el.classList.remove('in-view');
+        }
+      });
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+  
+
   return (
     <div className='main-mobile-home'>
         <Navbar />
         <section className="home-mobile">
         <div className="home-content">
             <div className='textbox'>
-                <h1 className="animated-heading">Hi, I'm Chinedu Uzodinma</h1>
-                <h3 className="animated-heading">Revops Analyst</h3>
+                <h1 className="animated-heading">Hi, I'm Chijioke Uzodinma</h1>
+                <h3 className="animated-heading">Data Engineer</h3>
                 <p className="animated-para">
-                I streamline and optimize revenue processes, aligning sales, marketing, and customer success teams to drive growth and maximize operational efficiency.
+                Business-Minded Data Engineer with a focus on optimizing and organizing data to drive strategic business decisions. I specialize in turning raw data into actionable insights, ensuring seamless data operations that align with business goals. Let’s work together to make your data a powerful strategic asset.
                 </p>
             </div>
             <div className="btn-box">
-                <a className="twitter-dm-button" href="https://twitter.com/messages/compose?recipient_id=1078039090916982785&text=Hiiiiiiiiiii%0AThanks%20for%20reaching%20out,%20drop%20a%20message%20and%20I'll%20reply%20as%20soon%20as%20I%20can!" data-screen-name="@mrejikee">Collaborate</a>
-                <a href="mailto:embroconnect@gmail.com?subject=Inquiry from [Your Name]: Let's Discuss [Your Topic or Question]">Contact Me</a>
+                <a href="https://twitter.com/messages/compose?recipient_id=1676607259512655874&text=Hi%0AThanks%20for%20reaching%20out,%20drop%20a%20message%20and%20I'll%20reply%20as%20soon%20as%20I%20can!">Collaborate</a>
+                <a href="mailto:embroconnect3@gmail.com?subject=Inquiry from [Your Name]: Let's Discuss [Your Topic or Question]">Contact Me</a>
             </div>
             <div className="home-sci">
-                <a href="https://x.com/mrejikee"><i className="bx bxl-twitter"></i></a>
-                <a href="#"><i className="bx bxl-linkedin"></i></a>
-                <a href="https://github.com/hello-ejike/"><i className="bx bxl-github"></i></a>
+                <a href="https://x.com/chijex5"><i className="bx bxl-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/chijioke-uzodinma-34389b267/"><i className="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/Chijex5/"><i className="bx bxl-github"></i></a>
                 <a href="mailto:embroconnect@gmail.com"><i className='bx bx-envelope'></i></a>
             </div>
         </div>
