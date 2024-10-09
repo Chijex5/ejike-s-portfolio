@@ -55,7 +55,7 @@ function About() {
             </h1>
           </div>
           <p className="about-description">
-          I’m Chinedu Uzodinma, a dedicated RevOps Analyst who specializes in streamlining revenue operations, optimizing sales processes, and integrating systems to drive business growth. My expertise includes analyzing and improving operational efficiencies, ensuring alignment between sales, marketing, and customer success teams, and leveraging data to support strategic decision-making and enhance revenue performance.
+          Focused on delivering scalable data solutions, I specialize in building robust data pipelines, designing optimized databases, and crafting analytics systems tailored to meet the specific needs of clients.
           </p>
           <div className="skills-section">
             <h3 className="skills-heading">Skills & Expertise</h3>

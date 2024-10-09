@@ -33,7 +33,7 @@ const isActive = (path) => location.pathname === path;
 
 return (
   <header className="header">
-    <Link to="/" className="logo">Chinedu</Link>
+    <Link to="/" className="logo">Chijioke</Link>
     <i 
       className={`bx ${isOpen ? "bx-x" : "bx-menu"} menu-toggle`} 
       onClick={toggleMenu}

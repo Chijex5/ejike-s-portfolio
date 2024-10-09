@@ -59,7 +59,7 @@ function HomeMobile() {
                 <a href="https://x.com/chijex5"><i className="bx bxl-twitter"></i></a>
                 <a href="https://www.linkedin.com/in/chijioke-uzodinma-34389b267/"><i className="bx bxl-linkedin"></i></a>
                 <a href="https://github.com/Chijex5/"><i className="bx bxl-github"></i></a>
-                <a href="mailto:embroconnect@gmail.com"><i className='bx bx-envelope'></i></a>
+                <a href="mailto:embroconnect3@gmail.com"><i className='bx bx-envelope'></i></a>
             </div>
         </div>
         </section>

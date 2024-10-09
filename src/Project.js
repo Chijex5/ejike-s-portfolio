@@ -9,20 +9,20 @@ function Project() {
 
     const projects = [
         {
-          title: 'Data Pipeline Automation Project',
-          description: 'Developed an end-to-end automated data pipeline for ETL processes, including data extraction, transformation, and loading into a cloud-based data warehouse.',
-          image: pic, 
+          title: 'Reddit Data Scrapper',
+          description: 'The Reddit Data Fetching and Storage System is designed to retrieve top posts from specified subreddits using the PRAW library. This system efficiently organizes the data into a Pandas DataFrame and facilitates the export of top-rated posts to a CSV file. Furthermore, it establishes a secure connection to a Snowflake database to store the top-rated posts, utilizing environment variables for sensitive information, such as API keys and database credentials. This approach ensures secure and efficient handling of data while maintaining data integrity.',
+          image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDetAbVcLup7fspY4j19iRojP5e6kL1mJWQA&s', 
           link: '#', 
-          source: '#', 
-          tools: ['bx bxl-python', 'fa-brands fa-docker', 'bx bxs-data', 'bx bxl-aws'],
+          source: 'https://github.com/Chijex5/redit_post.git', 
+          tools: ['bx bxl-python', 'fa-solid fa-snowflake', 'bx bxs-data', 'bx bxl-reddit'],
         },
         {
-          title: 'Real-time Data Streaming Analytics',
-          description: 'Created a real-time data processing system that ingests and processes streaming data to generate actionable insights.',
-          image: pic2,
+          title: 'Student Performance Tracking System',
+          description: 'The Student Performance Tracking System is designed to monitor student academic progress, automatically identify students who may be struggling, and enable early intervention through peer mentorship and notifications to guardians.',
+          image: 'https://nnedu.org/wp-content/uploads/2024/03/IMG-20230310-WA0023.jpg',
           link: '#', 
-          source: '#', 
-          tools: ['bx bxl-heroku', 'bx bxl-python', 'bx bxl-kubernetes', 'fa-solid fa-snowflake'],
+          source: 'https://github.com/Chijex5/skillphore_datathon', 
+          tools: ['bx bxl-python', 'bx bxl-postgresql', 'bx bxs-data', 'fa-solid fa-snowflake'],
         },
       ];
       
@@ -47,7 +47,6 @@ function Project() {
                         ))}
                     </div>
                     <div className="project-buttons">
-                        <a href={project.link} className="btn-box">View Project</a>
                         <a href={project.source} className="btn-box btn-secondary">Source Code</a>
                     </div>
                 </div>
